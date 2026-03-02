@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chesyf's Florist</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background-color: #fffafc;
+        color: #333;
+      }
+
+      header {
+        background: #f8d7e3;
+        padding: 20px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header h1 {
+        color: #b23a6f;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        margin-left: 20px;
+        font-weight: 500;
+      }
+
+      nav a:hover {
+        color: #b23a6f;
+      }
+
+      .hero {
+        height: 85vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 10%;
+        background:
+          linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+          url("https://images.unsplash.com/photo-1525310072745-f49212b5ac6d");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .hero h2 {
+        font-size: 40px;
+        color: #b23a6f;
+      }
+
+      .hero p {
+        margin: 20px 0;
+        font-size: 18px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 8px 20px;
+        background: #b23a6f;
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+        font-size: 14px;
+        margin-top: 10px;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        background: #8c2d56;
+      }
+
+      .section {
+        padding: 70px 8%;
+        text-align: center;
+      }
+
+      .section h2 {
+        margin-bottom: 40px;
+        color: #b23a6f;
+      }
+
+      .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+      }
+
+      .card {
+        background: white;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card h3 {
+        margin-bottom: 10px;
+        color: #b23a6f;
+      }
+
+      .price {
+        font-weight: bold;
+        margin-top: 5px;
+      }
+
+      footer {
+        background: #f8d7e3;
+        text-align: center;
+        padding: 20px;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Chesyf's Florist 🌷</h1>
+      <nav>
+        <a href="#produk">Produk</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h2>Rangkaian Bunga Penuh Cinta</h2>
+        <p>Menghadirkan bunga segar untuk setiap momen spesial Anda ✨</p>
+        <a href="https://wa.me/6285721199385" target="_blank" class="btn"
+          >Pesan Sekarang</a
+        >
+      </div>
+    </section>
+
+    <section class="section" id="produk">
+      <h2>Produk Kami</h2>
+
+      <div class="products">
+        <!-- BUNGA SATUAN -->
+        <div class="card">
+          <h3>Aster</h3>
+          <p>Bunga kecil manis yang memberi kesan hidup.</p>
+          <div class="price">Rp 8.000</div>
+          <a class="btn" href="https://wa.me/6285721199385" target="_blank"
+            >Pesan</a
+          >
+        </div>
+
+        <div class="card">
+          <h3>Ruscus</h3>
+          <p>Daun hijau segar untuk tampilan lebih elegan.</p>
+          <div class="price">Rp 8.000</div>
+          <a class="btn" href="https://wa.me/6285721199385" target="_blank"
+            >Pesan</a
+          >
+        </div>
+
+        <div class="card">
+          <h3>Anggrek Potong</h3>
+          <p>Bunga eksotis dan tahan lama.</p>
+          <div class="price">Rp 30.000</div>
+          <a class="btn" href="https://wa.me/6285721199385" target="_blank"
+            >Pesan</a
+          >
+        </div>
+
+        <div class="card">
+          <h3>Daisy</h3>
+          <p>Bunga simpel dan aesthetic.</p>
+          <div class="price">Rp 8.000</div>
+          <a class="btn" href="https://wa.me/6285721199385" target="_blank"
+            >Pesan</a
+          >
+        </div>
+
+        <div class="card">
+          <h3>Peony (Pre-Order)</h3>
+          <p>Kelopak besar dan mewah.</p>
+          <div class="price">Rp 60.000</div>
+          <a class="btn" href="https://wa.me/6285721199385" target="_blank"
+            >Pesan</a
+          >
+        </div>
+
+        <div class="card">
+          <h3>Sunflower</h3>
+          <p>Bunga cerah penuh semangat.</p>
+          <div class="price">Rp 25.000</div>
+          <a class="btn" href="https://wa.me/6285721199385" target="_blank"
+            >Pesan</a
+          >
+        </div>
+
+        <div class="card">
+          <h3>Krisan</h3>
+          <p>Membuat bouquet terlihat lebih penuh.</p>
+          <div class="price">Rp 7.000</div>
+          <a class="btn" href="https://wa.me/6285721199385" target="_blank"
+            >Pesan</a
+          >
+        </div>
+
+        <div class="card">
+          <h3>Anyelir</h3>
+          <p>Lembut dan tahan lama.</p>
+          <div class="price">Rp 12.000</div>
+          <a class="btn" href="https://wa.me/6285721199385" target="_blank"
+            >Pesan</a
+          >
+        </div>
+
+        <div class="card">
+          <h3>Gerbera</h3>
+          <p>Warna cerah dan fresh.</p>
+          <div class="price">Rp 10.000</div>
+          <a class="btn" href="https://wa.me/6285721199385" target="_blank"
+            >Pesan</a
+          >
+        </div>
+
+        <div class="card">
+          <h3>Tulip (Pre-Order)</h3>
+          <p>Bunga import aesthetic.</p>
+          <div class="price">Rp 45.000</div>
+          <a class="btn" href="https://wa.me/6285721199385" target="_blank"
+            >Pesan</a
+          >
+        </div>
+
+        <div class="card">
+          <h3>Mawar Lokal</h3>
+          <p>Mawar segar untuk momen romantis.</p>
+          <div class="price">Rp 8.000</div>
+          <a class="btn" href="https://wa.me/6285721199385" target="_blank"
+            >Pesan</a
+          >
+        </div>
+
+        <div class="card">
+          <h3>Mawar Import</h3>
+          <p>Ukuran besar tampilan premium.</p>
+          <div class="price">Rp 20.000</div>
+          <a class="btn" href="https://wa.me/6285721199385" target="_blank"
+            >Pesan</a
+          >
+        </div>
+
+        <div class="card">
+          <h3>Lily</h3>
+          <p>Harum dan elegan.</p>
+          <div class="price">Rp 35.000</div>
+          <a class="btn" href="https://wa.me/6285721199385" target="_blank"
+            >Pesan</a
+          >
+        </div>
+
+        <div class="card">
+          <h3>Baby's Breath</h3>
+          <p>Pelengkap lembut yang manis.</p>
+          <div class="price">Rp 15.000</div>
+          <a class="btn" href="https://wa.me/6285721199385" target="_blank"
+            >Pesan</a
+          >
+        </div>
+
+        <!-- BOUQUET -->
+        <div class="card">
+          <h3>Bouquet Sweet Simple</h3>
+          <p>Mix bunga cantik dengan wrapping manis.</p>
+          <div class="price">Rp 50.000</div>
+          <a class="btn" href="https://wa.me/6285721199385" target="_blank"
+            >Pesan</a
+          >
+        </div>
+
+        <div class="card">
+          <h3>Bouquet Romantic</h3>
+          <p>Mawar mix dengan tampilan elegan.</p>
+          <div class="price">Rp 120.000</div>
+          <a class="btn" href="https://wa.me/6285721199385" target="_blank"
+            >Pesan</a
+          >
+        </div>
+
+        <div class="card">
+          <h3>Bouquet Graduation</h3>
+          <p>Rangkaian wisuda lengkap topper.</p>
+          <div class="price">Rp 150.000</div>
+          <a class="btn" href="https://wa.me/6285721199385" target="_blank"
+            >Pesan</a
+          >
+        </div>
+
+        <div class="card">
+          <h3>Bouquet Premium Mix</h3>
+          <p>Kombinasi bunga premium mewah.</p>
+          <div class="price">Rp 250.000</div>
+          <a class="btn" href="https://wa.me/6285721199385" target="_blank"
+            >Pesan</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kontak">
+      <h2>Hubungi Kami</h2>
+      <p>WhatsApp: 0857-2119-9385</p>
+      <a href="https://wa.me/6285721199385" target="_blank" class="btn"
+        >Chat Sekarang</a
+      >
+    </section>
+
+    <footer>
+      <p>© 2026 Chesyf's Florist 🌷 | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
